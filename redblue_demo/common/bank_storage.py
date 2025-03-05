@@ -5,7 +5,7 @@ This module provides a class representing the storage for bank accounts.
 from redblue_demo.common.account import Account
 
 NUM_ACCOUNTS = 10000
-INIT_BALANCE = 1000.0
+INIT_BALANCE = 100.0
 
 
 class BankStorage:

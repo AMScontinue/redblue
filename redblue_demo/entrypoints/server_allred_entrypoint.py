@@ -6,7 +6,7 @@ creates a `Server` instance, and runs the server.
 """
 
 import sys
-from redblue_demo.server.server import Server, ServerConfig
+from redblue_demo.server.server_allred import ServerAllRed, ServerConfig
 
 
 def usage():
@@ -21,7 +21,7 @@ def main():
     """
     Parses the command line arguments, creates a Server instance, and runs the server.
     """
-    print ("Starting Red-Blue Server")
+    print ("Starting All-Red Server")
     args = sys.argv[1:]
     if len(args) < 2:
         usage()
@@ -30,7 +30,7 @@ def main():
     except ValueError:
         usage()
     addr = args[1:]
-    server = Server.from_config(ServerConfig(index, addr))
+    server = ServerAllRed.from_config(ServerConfig(index, addr))
     server.run()
 
 

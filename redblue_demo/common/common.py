@@ -17,8 +17,8 @@ Enums:
 from enum import Enum, auto
 from typing import Optional
 
-INTEREST_RATE: float = 0.04
-SERVER_DELAY: float = 0.2
+INTEREST_RATE: float = 0.05 # original 0.04
+SERVER_DELAY: float = 2 # original 0.2
 
 
 class COLOR:
